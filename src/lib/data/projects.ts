@@ -5,7 +5,7 @@ import type { Project } from '../types';
 export const items: Array<Project> = [
 	{
 		slug: 'duck-orm',
-		color: '#5e95e3',
+		color: '#0086ff',
 		description:
 			'The Duck-ORM package is an asynchronous ORM for Python, with support for Postgres and SQLite. ORM is built with: databases. Requirements: Python 3.8+. Duck-ORM is still under development.',
 		shortDescription:
@@ -24,11 +24,11 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'quem-gasta-mais',
-		color: '#ff3e00',
+		color: '#31A400',
 		description:
-			'Aplicação com propósito de mostrar o que está acontecendo na Câmara dos Deputados. Quais os deputados que mais gastam e com o que eles estão gastando.',
+			'Application with the purpose of showing what is happening in the Chamber of Deputies. Which deputies spend the most and what they are spending on.',
 		shortDescription:
-			'Aplicação com propósito de mostrar o que está acontecendo na Câmara dos Deputados. Quais os deputados que mais gastam e com o que eles estão gastando.',
+			'Application with the purpose of showing what is happening in the Chamber of Deputies. Which deputies spend the most and what they are spending on.',
 		links: [
 			{ to: 'https://github.com/richecr/CamaraDosDeputados', label: 'GitHub' },
 			{
@@ -73,7 +73,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'barbearia-saraiva-frontend',
-		color: '#ff3e00',
+		color: '#eb9a1a',
 		description:
 			'The product is a resource management system aimed at companies in the beauty salon/barbershop sector. We offer features such as: service scheduling, notifications, schedule management, customer loyalty system and registration with history.',
 		shortDescription:
@@ -141,7 +141,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'PyElit',
-		color: '#5e95e3',
+		color: '#69a7df',
 		description:
 			'It started with a research at LSI-UFCG and the activities are with Geoparsing and Topic Modeling. With the activities carried out, it was decided that it would be appropriate to create this library to be made available to the community.',
 		shortDescription:
@@ -158,7 +158,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'pythonicsqlgo',
-		color: '#5e95e3',
+		color: '#5777ff',
 		description: 'Query Builder written in Golang for Python.',
 		shortDescription: 'Query Builder written in Golang for Python.',
 		links: [{ to: 'https://github.com/richecr/pythonicsqlgo', label: 'GitHub' }],
@@ -172,7 +172,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'hltvgo',
-		color: '#5e95e3',
+		color: '#2bf500',
 		description: 'This is an unofficial library of hltv.org',
 		shortDescription: 'This is an unofficial library of hltv.org',
 		links: [{ to: 'https://github.com/richecr/hltvgo', label: 'GitHub' }],
@@ -186,7 +186,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'pyhltv',
-		color: '#5e95e3',
+		color: '#744700',
 		description: 'Library to extract information from the HLTV website.',
 		shortDescription: 'Library to extract information from the HLTV website.',
 		links: [{ to: 'https://github.com/richecr/pyhltv', label: 'GitHub' }],
