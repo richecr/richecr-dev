@@ -135,6 +135,14 @@ export const items = [
 		category: 'library'
 	}),
 	defineSkill({
+		slug: 'expressjs',
+		color: 'orange',
+		description: '',
+		logo: Assets.ExpressJs,
+		name: 'ExpressJs',
+		category: 'markup-style'
+	}),
+	defineSkill({
 		slug: 'reactjs',
 		color: 'cyan',
 		description: reactjs,
@@ -213,6 +221,14 @@ export const items = [
 		logo: Assets.Redis,
 		name: 'Redis',
 		category: 'db'
+	}),
+	defineSkill({
+		slug: 'css',
+		color: 'orange',
+		description: '',
+		logo: Assets.CSS,
+		name: 'CSS',
+		category: 'markup-style'
 	})
 ] as const;
 

@@ -41,6 +41,7 @@ export const skills = getSkills(
 	'fastapi',
 	'spring',
 	'fastify',
+	'expressjs',
 	'reactjs',
 	'vuejs',
 	'svelte',
