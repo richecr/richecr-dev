@@ -10,13 +10,16 @@ export const items: Array<Project> = [
 			'The Duck-ORM package is an asynchronous ORM for Python, with support for Postgres and SQLite. ORM is built with: databases. Requirements: Python 3.8+. Duck-ORM is still under development.',
 		shortDescription:
 			'The Duck-ORM package is an asynchronous ORM for Python, with support for Postgres and SQLite.',
-		links: [{ to: 'https://github.com/richecr/duck-orm', label: 'GitHub' }],
+		links: [
+			{ to: 'https://github.com/richecr/duck-orm', label: 'GitHub' },
+			{ to: 'https://richecr.github.io/duck-orm/', label: 'Documentation' }
+		],
 		logo: Assets.Unknown,
 		name: 'DuckORM',
 		period: {
 			from: new Date(2021, 2, 7)
 		},
-		skills: getSkills('python'),
+		skills: getSkills('python', 'docker'),
 		type: 'Library'
 	},
 	{
@@ -72,9 +75,9 @@ export const items: Array<Project> = [
 		slug: 'barbearia-saraiva-frontend',
 		color: '#ff3e00',
 		description:
-			'O produto trata-se de um sistema de gerenciamento de recursos voltado para empresas do setor de salão de beleza/barbearias. Nele oferecemos funcionalidades de: agendamentos de serviços, notificações, gerência de cronogramas, sistema de fidelidade dos clientes e cadastro com histórico.',
+			'The product is a resource management system aimed at companies in the beauty salon/barbershop sector. We offer features such as: service scheduling, notifications, schedule management, customer loyalty system and registration with history.',
 		shortDescription:
-			'O produto trata-se de um sistema de gerenciamento de recursos voltado para empresas do setor de salão de beleza/barbearias.',
+			'The product is a resource management system aimed at companies in the beauty salon/barbershop sector.',
 		links: [
 			{ to: 'https://github.com/richecr/barbearia-saraiva-frontend', label: 'GitHub' },
 			{
@@ -117,9 +120,9 @@ export const items: Array<Project> = [
 		slug: 'barbearia-saraiva-back',
 		color: '#ff3e00',
 		description:
-			'O produto trata-se de um sistema de gerenciamento de recursos voltado para empresas do setor de salão de beleza/barbearias. Nele oferecemos funcionalidades de: agendamentos de serviços, notificações, gerência de cronogramas, sistema de fidelidade dos clientes e cadastro com histórico.',
+			'The product is a resource management system aimed at companies in the beauty salon/barbershop sector. We offer features such as: service scheduling, notifications, schedule management, customer loyalty system and registration with history.',
 		shortDescription:
-			'O produto trata-se de um sistema de gerenciamento de recursos voltado para empresas do setor de salão de beleza/barbearias.',
+			'The product is a resource management system aimed at companies in the beauty salon/barbershop sector.',
 		links: [
 			{ to: 'https://github.com/richecr/barbearia-saraiva-back', label: 'GitHub' },
 			{
@@ -144,26 +147,11 @@ export const items: Array<Project> = [
 		shortDescription:
 			'It started with a research at LSI-UFCG and the activities are with Geoparsing and Topic Modeling. With the activities carried out, it was decided that it would be appropriate to create this library to be made available to the community.',
 		links: [{ to: 'https://github.com/richecr/PyElit', label: 'GitHub' }],
-		logo: Assets.Unknown,
+		logo: Assets.PyElit,
 		name: 'PyElit',
 		period: {
 			from: new Date(2019, 9, 9),
 			to: new Date(2022, 8, 6)
-		},
-		skills: getSkills('python'),
-		type: 'Library'
-	},
-	{
-		slug: 'pyhltv',
-		color: '#5e95e3',
-		description: 'Library to extract information from the HLTV website.',
-		shortDescription: 'Library to extract information from the HLTV website.',
-		links: [{ to: 'https://github.com/richecr/pyhltv', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'pyhltv',
-		period: {
-			from: new Date(2020, 6, 26),
-			to: new Date(2023, 8, 22)
 		},
 		skills: getSkills('python'),
 		type: 'Library'
@@ -180,6 +168,34 @@ export const items: Array<Project> = [
 			from: new Date(2023, 11, 24)
 		},
 		skills: getSkills('go', 'python'),
+		type: 'Library'
+	},
+	{
+		slug: 'hltvgo',
+		color: '#5e95e3',
+		description: 'This is an unofficial library of hltv.org',
+		shortDescription: 'This is an unofficial library of hltv.org',
+		links: [{ to: 'https://github.com/richecr/hltvgo', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'hltvgo',
+		period: {
+			from: new Date(2023, 8, 30)
+		},
+		skills: getSkills('go', 'python'),
+		type: 'Library'
+	},
+	{
+		slug: 'pyhltv',
+		color: '#5e95e3',
+		description: 'Library to extract information from the HLTV website.',
+		shortDescription: 'Library to extract information from the HLTV website.',
+		links: [{ to: 'https://github.com/richecr/pyhltv', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'pyhltv',
+		period: {
+			from: new Date(2020, 6, 26)
+		},
+		skills: getSkills('python'),
 		type: 'Library'
 	}
 ];

@@ -7,6 +7,7 @@ import kotlin from '../md/kotlin.md?raw';
 import js from '../md/js.md?raw';
 import ts from '../md/ts.md?raw';
 import go from '../md/go.md?raw';
+import clojure from '../md/clojure.md?raw';
 import nodejs from '../md/nodejs.md?raw';
 import fastapi from '../md/fastapi.md?raw';
 import spring from '../md/spring.md?raw';
@@ -20,6 +21,12 @@ import nginx from '../md/nginx.md?raw';
 import kafka from '../md/kafka.md?raw';
 import postgresql from '../md/postgresql.md?raw';
 import redis from '../md/redis.md?raw';
+import css from '../md/css.md?raw';
+import saphana from '../md/saphana.md?raw';
+import sklearn from '../md/sklearn.md?raw';
+import numpy from '../md/numpy.md?raw';
+import pandas from '../md/pandas.md?raw';
+import spacy from '../md/spacy.md?raw';
 import { omit, type StringWithAutoComplete } from '@riadh-adrani/utils';
 
 const defineSkillCategory = <S extends string>(data: SkillCategory<S>): SkillCategory<S> => data;
@@ -103,6 +110,14 @@ export const items = [
 		category: 'pro-lang'
 	}),
 	defineSkill({
+		slug: 'clojure',
+		color: 'orange',
+		description: clojure,
+		logo: Assets.Clojure,
+		name: 'Clojure',
+		category: 'pro-lang'
+	}),
+	defineSkill({
 		slug: 'nodejs',
 		color: 'yellow',
 		description: nodejs,
@@ -111,19 +126,19 @@ export const items = [
 		category: 'framework'
 	}),
 	defineSkill({
-		slug: 'fastapi',
-		color: 'cyan',
-		description: fastapi,
-		logo: Assets.FastApi,
-		name: 'FastApi',
-		category: 'library'
-	}),
-	defineSkill({
 		slug: 'spring',
 		color: 'cyan',
 		description: spring,
 		logo: Assets.Spring,
 		name: 'Spring',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'fastapi',
+		color: 'cyan',
+		description: fastapi,
+		logo: Assets.FastApi,
+		name: 'FastApi',
 		category: 'library'
 	}),
 	defineSkill({
@@ -140,7 +155,7 @@ export const items = [
 		description: '',
 		logo: Assets.ExpressJs,
 		name: 'ExpressJs',
-		category: 'markup-style'
+		category: 'library'
 	}),
 	defineSkill({
 		slug: 'reactjs',
@@ -223,12 +238,52 @@ export const items = [
 		category: 'db'
 	}),
 	defineSkill({
+		slug: 'saphana',
+		color: 'orange',
+		description: saphana,
+		logo: Assets.SapHana,
+		name: 'SapHana',
+		category: 'db'
+	}),
+	defineSkill({
 		slug: 'css',
 		color: 'orange',
-		description: '',
+		description: css,
 		logo: Assets.CSS,
 		name: 'CSS',
 		category: 'markup-style'
+	}),
+	defineSkill({
+		slug: 'sklearn',
+		color: 'orange',
+		description: sklearn,
+		logo: Assets.Sklearn,
+		name: 'Sklearn',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'numpy',
+		color: 'orange',
+		description: numpy,
+		logo: Assets.Numpy,
+		name: 'Numpy',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'pandas',
+		color: 'orange',
+		description: pandas,
+		logo: Assets.Pandas,
+		name: 'Pandas',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'spacy',
+		color: 'orange',
+		description: spacy,
+		logo: Assets.Spacy,
+		name: 'Spacy',
+		category: 'library'
 	})
 ] as const;
 
