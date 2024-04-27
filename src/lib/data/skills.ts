@@ -1,6 +1,25 @@
 import Assets from './assets';
 import type { Skill, SkillCategory } from '../types';
 import svelte from '../md/svelte.md?raw';
+import python from '../md/python.md?raw';
+import java from '../md/java.md?raw';
+import kotlin from '../md/kotlin.md?raw';
+import js from '../md/js.md?raw';
+import ts from '../md/ts.md?raw';
+import go from '../md/go.md?raw';
+import nodejs from '../md/nodejs.md?raw';
+import fastapi from '../md/fastapi.md?raw';
+import spring from '../md/spring.md?raw';
+import fastify from '../md/fastify.md?raw';
+import reactjs from '../md/reactjs.md?raw';
+import vuejs from '../md/vuejs.md?raw';
+import aws from '../md/aws.md?raw';
+import docker from '../md/docker.md?raw';
+import kubernetes from '../md/kubernetes.md?raw';
+import nginx from '../md/nginx.md?raw';
+import kafka from '../md/kafka.md?raw';
+import postgresql from '../md/postgresql.md?raw';
+import redis from '../md/redis.md?raw';
 import { omit, type StringWithAutoComplete } from '@riadh-adrani/utils';
 
 const defineSkillCategory = <S extends string>(data: SkillCategory<S>): SkillCategory<S> => data;
@@ -36,10 +55,33 @@ const defineSkill = <S extends string>(
 
 export const items = [
 	defineSkill({
+		slug: 'python',
+		color: 'blue',
+		description: python,
+		logo: Assets.Python,
+		name: 'Python',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'java',
+		color: 'orange',
+		description: java,
+		logo: Assets.Java,
+		name: 'Java',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'kotlin',
+		color: 'pink',
+		description: kotlin,
+		logo: Assets.Kotlin,
+		name: 'Kotlin',
+		category: 'pro-lang'
+	}),
+	defineSkill({
 		slug: 'js',
 		color: 'yellow',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description: js,
 		logo: Assets.JavaScript,
 		name: 'Javascript',
 		category: 'pro-lang'
@@ -47,55 +89,130 @@ export const items = [
 	defineSkill({
 		slug: 'ts',
 		color: 'blue',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description: ts,
 		logo: Assets.TypeScript,
 		name: 'Typescript',
 		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'css',
-		color: 'blue',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.CSS,
-		name: 'CSS',
-		category: 'markup-style'
-	}),
-	defineSkill({
-		slug: 'html',
+		slug: 'go',
 		color: 'orange',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.HTML,
-		name: 'HTML',
-		category: 'markup-style'
+		description: go,
+		logo: Assets.Go,
+		name: 'Go',
+		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'sass',
-		color: 'pink',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.Sass,
-		name: 'Sass',
-		category: 'markup-style'
+		slug: 'nodejs',
+		color: 'yellow',
+		description: nodejs,
+		logo: Assets.NodeJs,
+		name: 'NodeJs',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'fastapi',
+		color: 'cyan',
+		description: fastapi,
+		logo: Assets.FastApi,
+		name: 'FastApi',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'spring',
+		color: 'cyan',
+		description: spring,
+		logo: Assets.Spring,
+		name: 'Spring',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'fastify',
+		color: 'cyan',
+		description: fastify,
+		logo: Assets.Fastify,
+		name: 'Fastify',
+		category: 'library'
 	}),
 	defineSkill({
 		slug: 'reactjs',
 		color: 'cyan',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description: reactjs,
 		logo: Assets.ReactJs,
 		name: 'React Js',
 		category: 'library'
 	}),
 	defineSkill({
+		slug: 'vuejs',
+		color: 'cyan',
+		description: vuejs,
+		logo: Assets.VueJs,
+		name: 'Vue Js',
+		category: 'framework'
+	}),
+	defineSkill({
 		slug: 'svelte',
-		color: 'orange',
+		color: 'cyan',
 		description: svelte,
 		logo: Assets.Svelte,
-		name: 'Svelte',
+		name: 'svelte',
 		category: 'library'
+	}),
+	defineSkill({
+		slug: 'aws',
+		color: 'orange',
+		description: aws,
+		logo: Assets.AWS,
+		name: 'Aws',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'docker',
+		color: 'orange',
+		description: docker,
+		logo: Assets.Docker,
+		name: 'Docker',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'kubernetes',
+		color: 'orange',
+		description: kubernetes,
+		logo: Assets.Kubernetes,
+		name: 'Kubernetes',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'nginx',
+		color: 'orange',
+		description: nginx,
+		logo: Assets.Nginx,
+		name: 'Nginx',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'kafka',
+		color: 'orange',
+		description: kafka,
+		logo: Assets.Kafka,
+		name: 'Kafka',
+		category: 'devtools'
+	}),
+	defineSkill({
+		slug: 'postgresql',
+		color: 'orange',
+		description: postgresql,
+		logo: Assets.PostgreSQL,
+		name: 'PostgreSQL',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'redis',
+		color: 'orange',
+		description: redis,
+		logo: Assets.Redis,
+		name: 'Redis',
+		category: 'db'
 	})
 ] as const;
 
