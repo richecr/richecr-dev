@@ -1,3 +1,3 @@
-export const data = '';
+export const posts = [];
 
-export const title = 'Resumé';
+export const title = 'Posts';

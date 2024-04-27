@@ -8,7 +8,7 @@ export const name = 'Rich';
 export const lastName = 'Ramalho';
 
 export const description =
-	'Graduado em Ciência da Computação pela UFCG e cursando MBA - Arquitetura Full Cycle. Experiente em desenvolvimento web e mobile com Python, JavaScript, Java, Kotlin e mais. Atualmente, trabalho com tecnologias como NodeJS, Kotlin, Python e React na OLX Brasil. Sou apaixonado por projetos Open Source, novas tecnologias e jogos eletrônicos, especialmente FPS como CSGO e Souls Like como Gow Of War. Busco constantemente aprender mais e contribuir para soluções que impactem positivamente o mundo.';
+	"Graduated in Computer Science from UFCG and studying MBA - Full Cycle Architecture. Experienced in web and mobile development with Python, JavaScript, Java, Kotlin and more. Currently, I work with technologies such as NodeJS, Kotlin, Python and React at OLX Brasil. I'm passionate about Open Source projects, new technologies and electronic games, especially FPS like CSGO and Souls Like like Gow Of War. I constantly seek to learn more and contribute to solutions that positively impact the world.";
 
 export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/richecr' },

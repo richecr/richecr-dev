@@ -1,5 +1,5 @@
 <script>
-	import { data, title } from '@data/resume';
+	import { posts, title } from '@data/resume';
 
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import CommonPage from '$lib/components/CommonPage.svelte';
@@ -7,12 +7,10 @@
 
 <CommonPage {title}>
 	<div class="resume">
-		{#if data}
-			<a href={data} download>
-				<Chip size={'1.25em'}>Download</Chip>
-			</a>
+		{#if posts.length > 0}
+			<h>TODO</h>
 		{:else}
-			<Chip>Ooops! no CV at the moment.</Chip>
+			<Chip>Ooops! No posts at the moment</Chip>
 		{/if}
 	</div>
 </CommonPage>
