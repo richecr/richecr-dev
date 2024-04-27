@@ -4,34 +4,24 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/richecr.github.io/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
-		
-		<link rel="modulepreload" href="/richecr.github.io/_app/immutable/entry/start.02152294.js">
-		<link rel="modulepreload" href="/richecr.github.io/_app/immutable/chunks/scheduler.7a274a43.js">
-		<link rel="modulepreload" href="/richecr.github.io/_app/immutable/chunks/singletons.3d00c301.js">
-		<link rel="modulepreload" href="/richecr.github.io/_app/immutable/chunks/paths.1363a602.js">
-		<link rel="modulepreload" href="/richecr.github.io/_app/immutable/entry/app.8a9ffd31.js">
-		<link rel="modulepreload" href="/richecr.github.io/_app/immutable/chunks/index.28409b7f.js">
+		<meta http-equiv="content-security-policy" content="">
+		<link rel="modulepreload" href="/richecr.github.io/_app/immutable/start-7e08d07c.js">
+		<link rel="modulepreload" href="/richecr.github.io/_app/immutable/chunks/index-c15dc07e.js">
+		<link rel="modulepreload" href="/richecr.github.io/_app/immutable/chunks/utils-41fe8f1c.js">
+		<link rel="modulepreload" href="/richecr.github.io/_app/immutable/chunks/singletons-847e91e5.js">
+		<link rel="modulepreload" href="/richecr.github.io/_app/immutable/chunks/paths-111ee3a1.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
-			<script>
-				{
-					__sveltekit_69slkp = {
-						assets: "/richecr.github.io",
-						base: "/richecr.github.io",
-						env: {}
-					};
+		<script type="module" data-sveltekit-hydrate="45h">
+			import { start } from "/richecr.github.io/_app/immutable/start-7e08d07c.js";
 
-					const element = document.currentScript.parentElement;
-
-					Promise.all([
-						import("/richecr.github.io/_app/immutable/entry/start.02152294.js"),
-						import("/richecr.github.io/_app/immutable/entry/app.8a9ffd31.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element);
-					});
-				}
-			</script>
-		</div>
+			start({
+				env: {},
+				paths: {"base":"/richecr.github.io","assets":"/richecr.github.io"},
+				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
+				version: "1714250131182"
+			});
+		</script></div>
 	</body>
 </html>
