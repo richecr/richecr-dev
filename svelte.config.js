@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
-const base = '/richecr.github.io';
+const base = '/richecr-portofolio';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
