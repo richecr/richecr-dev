@@ -1,125 +1,163 @@
+import { ContractType, type Experience } from '../types';
 import Assets from './assets';
 import { getSkills } from './skills';
-import { ContractType, type Experience } from '../types';
-
-import olx from '../md/olx.md?raw';
 
 export const items: Array<Experience> = [
-	{
-		slug: 'software-engineer-2',
-		company: 'OLX Brasil',
-		description: olx,
-		contract: ContractType.FullTime,
-		type: 'Software Development',
-		location: 'Home',
-		period: { from: new Date(2023, 9, 1) },
-		skills: getSkills(
-			'java',
-			'python',
-			'js',
-			'ts',
-			'kotlin',
-			'spring',
-			'expressjs',
-			'fastapi',
-			'vuejs',
-			'reactjs',
-			'ts',
-			'postgresql',
-			'docker',
-			'kubernetes',
-			'aws'
-		),
-		name: 'Software Engineer II',
-		color: 'blue',
-		links: [],
-		logo: Assets.OLX,
-		shortDescription:
-			'In our team, we are responsible for millions of ads published on platforms, namely: OLX, ZAP and Viva Real, through integrations developed to meet the needs of our professional clients.'
-	},
-	{
-		slug: 'software-engineer',
-		company: 'OLX Brasil',
-		description: olx,
-		contract: ContractType.FullTime,
-		type: 'Software Development',
-		location: 'Home',
-		period: { from: new Date(2022, 6, 1), to: new Date(2023, 9, 1) },
-		skills: getSkills(
-			'java',
-			'python',
-			'js',
-			'ts',
-			'kotlin',
-			'spring',
-			'expressjs',
-			'fastapi',
-			'vuejs',
-			'reactjs',
-			'ts',
-			'postgresql',
-			'docker',
-			'kubernetes',
-			'aws'
-		),
-		name: 'Software Engineer I',
-		color: 'blue',
-		links: [],
-		logo: Assets.OLX,
-		shortDescription:
-			'In our team, we are responsible for millions of ads published on platforms, namely: OLX, ZAP and Viva Real, through integrations developed to meet the needs of our professional clients.'
-	},
-	{
-		slug: 'analyst-developer',
-		company: 'Laboratório de Sistemas de Informação - LSI',
-		description:
-			"I work on an LSI/UFCG project in partnership with tax solution Synchro, Syn4TDF. It is a native solution for the SAP environment, which exploits the full power of HANA processing and provides information on the taxable event in real time when determining and declaring the ancillary obligation. Synchro's tax knowledge know-how is essential to ensure compliance and efficiency in the process of generating tax obligations.",
-		contract: ContractType.FullTime,
-		type: 'Software Development',
-		location: 'Campina Grande - PB',
-		period: { from: new Date(2022, 4, 1), to: new Date(2022, 6, 1) },
-		skills: getSkills('java', 'clojure', 'spring', 'reactjs', 'ts', 'saphana'),
-		name: 'Analyst Developer',
-		color: 'green',
-		links: [],
-		logo: Assets.LSI,
-		shortDescription:
-			'Scholarship holder in the LSI project at UFCG. Working with Data Science and Machine Learning.'
-	},
-	{
-		slug: 'software-developement',
-		company: 'Laboratório de Sistemas de Informação - LSI',
-		description:
-			"I work on an LSI/UFCG project in partnership with tax solution Synchro, Syn4TDF. It is a native solution for the SAP environment, which exploits the full power of HANA processing and provides information on the taxable event in real time when determining and declaring the ancillary obligation. Synchro's tax knowledge know-how is essential to ensure compliance and efficiency in the process of generating tax obligations.",
-		contract: ContractType.PartTime,
-		type: 'Software Development',
-		location: 'Campina Grande - PB',
-		period: { from: new Date(2020, 4, 1), to: new Date(2022, 4, 1) },
-		skills: getSkills('java', 'clojure', 'spring', 'reactjs', 'ts', 'saphana'),
-		name: 'Junior Developer',
-		color: 'green',
-		links: [],
-		logo: Assets.LSI,
-		shortDescription:
-			'Scholarship holder in the LSI project at UFCG. Working with Data Science and Machine Learning.'
-	},
-	{
-		slug: 'scholarship-holder',
-		company: 'Laboratório de Sistemas de Informação - LSI',
-		description:
-			"Scholarship holder in the LSI project at UFCG. Working with Data Science and Machine Learning. Objective: Extract and convert the videos from TV Paraíba's 'JPB Calendar' section into texts and then process the data obtained, extracting its location and the class of the problem addressed in the video. At the end of the research, a library capable of extracting the address and the urban problem addressed in a text will be distributed.",
-		contract: ContractType.PartTime,
-		type: 'Software Development',
-		location: 'Campina Grande - PB',
-		period: { from: new Date(2019, 3, 1), to: new Date(2020, 4, 1) },
-		skills: getSkills('python', 'js', 'sklearn', 'numpy', 'pandas', 'spacy'),
-		name: 'Scholarship Holder',
-		color: 'green',
-		links: [],
-		logo: Assets.LSI,
-		shortDescription:
-			'Scholarship holder in the LSI project at UFCG. Working with Data Science and Machine Learning.'
-	}
+  {
+    slug: 'software-engineer-2',
+    company: 'OLX Brasil',
+    description: `
+### Software Engineer II — Ad-Integration (Oct 2023 – Present)
+
+Part of the **Ad-Integration team**, responsible for the **platform that handles insertion, update, and deletion of all listings** — both through APIs (B2B integrations) and manual postings. Ensuring **millions of ads** are processed reliably and at scale across **OLX, ZAP, and Viva Real**.
+
+**Key Contributions**
+- **Feeds-core modularization** → reduced deployment time **31min → 21min**, increasing productivity and paving the way for future modular separation;
+- **Generic integrations with external inspection providers** → reduced onboarding time for new partnerships by **50%+**;
+- **Renewal APIs and Vehicle History (HV) mass reports** → expanded product offerings for professional clients;
+- Implemented **validations, schedulers, pagination and restrictions** in high-volume flows (e.g. inspections, listing queries), improving robustness and consistency;
+- Designed **dashboards and alerts** for critical services → reduced time to detect and resolve incidents;
+- Ensured **LGPD compliance** and handled production issues, strengthening platform security and reliability;
+- **Mentored junior engineers**, led knowledge-sharing initiatives, and improved team maturity.
+
+**Business Impact (A/B Tests)**
+- **Price reduction badge**: +14% to +34% in user contacts;
+- **Chat shortcut in listings**: +6.2% in contacts;
+- **PRO differentiators**: +5.9% to +17.1% uplift.
+
+**More about integrations**
+- Developers: https://developers.olx.com.br | https://developers.grupozap.com
+`,
+    contract: ContractType.FullTime,
+    type: 'Software Development',
+    location: 'Remote',
+    period: { from: new Date(2023, 9, 1) },
+    skills: getSkills(
+      'java',
+      'kotlin',
+      'python',
+      'js',
+      'ts',
+      'spring',
+      'nodejs',
+      'fastapi',
+      'vuejs',
+      'reactjs',
+      'postgresql',
+      'docker',
+      'kubernetes',
+      'aws',
+      'kafka',
+      'elasticsearch',
+      'grafana'
+    ),
+    name: 'Software Engineer II',
+    color: 'blue',
+    links: [],
+    logo: Assets.OLX,
+    shortDescription:
+      'Ad-Integration team: core platform for listing insertion, update, and removal across OLX, ZAP, and Viva Real.'
+  },
+  {
+    slug: 'software-engineer',
+    company: 'OLX Brasil',
+    description: `
+### Software Engineer I — Integrations (Jul 2022 – Oct 2023)
+
+Worked on the **Integrations team**, managing **millions of listings** across OLX, ZAP, and Viva Real. Focused on evolving **APIs, lead flows,** and **backoffice** to ensure scalability, reliability, and client autonomy.
+
+**Key Contributions**
+- Delivered **lead enrichment features** and new integration formats → improved data quality and reduced rework for clients;
+- Built **self-service APIs** → significantly reduced support tickets and increased integrator autonomy;
+- Contributed to the **lead architecture redesign** using **microservices and hexagonal architecture**, boosting scalability and maintainability;
+- Developed **test suites with 90%+ coverage** for critical lead flows (“Animais Fantásticos”), increasing production reliability;
+- Supported **backoffice migration** to modern stacks (**Vue.js, React/Next.js**), improving usability and maintainability;
+- Built **ad governance APIs** (activation/deactivation of providers), enhancing operational efficiency and transparency.
+
+**Stack/Environment**
+- Kotlin, Python, JS/TS; Spring, Node.js, FastAPI; AWS, Kafka, Docker, Kubernetes; PostgreSQL.
+
+**More about integrations**
+- Developers: https://developers.olx.com.br | https://developers.grupozap.com
+`,
+    contract: ContractType.FullTime,
+    type: 'Software Development',
+    location: 'Remote',
+    period: { from: new Date(2022, 6, 1), to: new Date(2023, 9, 1) },
+    skills: getSkills(
+      'kotlin',
+      'python',
+      'js',
+      'ts',
+      'spring',
+      'nodejs',
+      'fastapi',
+      'vuejs',
+      'reactjs',
+      'postgresql',
+      'docker',
+      'kubernetes',
+      'aws',
+      'kafka'
+    ),
+    name: 'Software Engineer I',
+    color: 'blue',
+    links: [],
+    logo: Assets.OLX,
+    shortDescription:
+      'Integrations team: scaling APIs, lead flows, and backoffice to support millions of listings and professional clients.'
+  },
+  {
+    slug: 'analyst-developer',
+    company: 'Laboratório de Sistemas de Informação - LSI',
+    description:
+      "I worked on an LSI/UFCG project in partnership with tax solution Synchro, Syn4TDF. A native solution for the SAP environment, leveraging HANA’s real-time processing to provide tax event information instantly for compliance. Synchro’s expertise ensured accuracy and efficiency in tax obligation generation.",
+    contract: ContractType.FullTime,
+    type: 'Software Development',
+    location: 'Campina Grande - PB',
+    period: { from: new Date(2022, 4, 1), to: new Date(2022, 6, 1) },
+    skills: getSkills('java', 'clojure', 'spring', 'reactjs', 'ts', 'saphana'),
+    name: 'Analyst Developer',
+    color: 'green',
+    links: [],
+    logo: Assets.LSI,
+    shortDescription:
+      'Worked on Syn4TDF SAP tax solution with real-time HANA processing for compliance and efficiency.'
+  },
+  {
+    slug: 'software-developement',
+    company: 'Laboratório de Sistemas de Informação - LSI',
+    description:
+      "Worked on an LSI/UFCG project in partnership with Synchro, building the Syn4TDF tax solution for SAP. Leveraged HANA real-time processing for instant tax event reporting, ensuring compliance and efficient tax obligation management.",
+    contract: ContractType.PartTime,
+    type: 'Software Development',
+    location: 'Campina Grande - PB',
+    period: { from: new Date(2020, 4, 1), to: new Date(2022, 4, 1) },
+    skills: getSkills('java', 'clojure', 'spring', 'reactjs', 'ts', 'saphana'),
+    name: 'Junior Developer',
+    color: 'green',
+    links: [],
+    logo: Assets.LSI,
+    shortDescription:
+      'Contributed to Syn4TDF SAP tax solution with real-time processing for compliance and efficiency.'
+  },
+  {
+    slug: 'scholarship-holder',
+    company: 'Laboratório de Sistemas de Informação - LSI',
+    description:
+      "Research fellow in the LSI project at UFCG. Developed a pipeline to extract and convert videos from TV Paraíba's 'Calendário JPB' into text, then applied NLP to detect location and urban issues described. Delivered a library capable of extracting addresses and urban problem categories from text.",
+    contract: ContractType.PartTime,
+    type: 'Software Development',
+    location: 'Campina Grande - PB',
+    period: { from: new Date(2019, 3, 1), to: new Date(2020, 4, 1) },
+    skills: getSkills('python', 'js', 'sklearn', 'numpy', 'pandas', 'spacy'),
+    name: 'Research Fellow',
+    color: 'green',
+    links: [],
+    logo: Assets.LSI,
+    shortDescription:
+      'Researched NLP solutions for extracting locations and urban issues from TV Paraíba’s “Calendário JPB” news program.'
+  }
 ];
 
 export const title = 'Experience';

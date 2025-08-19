@@ -1,33 +1,35 @@
-import Assets from './assets';
-import type { Skill, SkillCategory } from '../types';
-import svelte from '../md/svelte.md?raw';
-import python from '../md/python.md?raw';
-import java from '../md/java.md?raw';
-import kotlin from '../md/kotlin.md?raw';
-import js from '../md/js.md?raw';
-import ts from '../md/ts.md?raw';
-import go from '../md/go.md?raw';
-import clojure from '../md/clojure.md?raw';
-import nodejs from '../md/nodejs.md?raw';
-import fastapi from '../md/fastapi.md?raw';
-import spring from '../md/spring.md?raw';
-import fastify from '../md/fastify.md?raw';
-import reactjs from '../md/reactjs.md?raw';
-import vuejs from '../md/vuejs.md?raw';
+import { omit, type StringWithAutoComplete } from '@riadh-adrani/utils';
 import aws from '../md/aws.md?raw';
-import docker from '../md/docker.md?raw';
-import kubernetes from '../md/kubernetes.md?raw';
-import nginx from '../md/nginx.md?raw';
-import kafka from '../md/kafka.md?raw';
-import postgresql from '../md/postgresql.md?raw';
-import redis from '../md/redis.md?raw';
+import clojure from '../md/clojure.md?raw';
 import css from '../md/css.md?raw';
-import saphana from '../md/saphana.md?raw';
-import sklearn from '../md/sklearn.md?raw';
+import docker from '../md/docker.md?raw';
+import fastapi from '../md/fastapi.md?raw';
+import fastify from '../md/fastify.md?raw';
+import go from '../md/go.md?raw';
+import java from '../md/java.md?raw';
+import js from '../md/js.md?raw';
+import kafka from '../md/kafka.md?raw';
+import kotlin from '../md/kotlin.md?raw';
+import kubernetes from '../md/kubernetes.md?raw';
+import mongodb from '../md/mongodb.md?raw';
+import nestjs from '../md/nestjs.md?raw';
+import nginx from '../md/nginx.md?raw';
+import nodejs from '../md/nodejs.md?raw';
 import numpy from '../md/numpy.md?raw';
 import pandas from '../md/pandas.md?raw';
+import postgresql from '../md/postgresql.md?raw';
+import python from '../md/python.md?raw';
+import reactjs from '../md/reactjs.md?raw';
+import redis from '../md/redis.md?raw';
+import saphana from '../md/saphana.md?raw';
+import sklearn from '../md/sklearn.md?raw';
 import spacy from '../md/spacy.md?raw';
-import { omit, type StringWithAutoComplete } from '@riadh-adrani/utils';
+import spring from '../md/spring.md?raw';
+import svelte from '../md/svelte.md?raw';
+import ts from '../md/ts.md?raw';
+import vuejs from '../md/vuejs.md?raw';
+import type { Skill, SkillCategory } from '../types';
+import Assets from './assets';
 
 const defineSkillCategory = <S extends string>(data: SkillCategory<S>): SkillCategory<S> => data;
 
@@ -134,6 +136,14 @@ export const items = [
 		category: 'framework'
 	}),
 	defineSkill({
+		slug: 'nestjs',
+		color: 'cyan',
+		description: nestjs,
+		logo: Assets.NestJs,
+		name: 'NestJs',
+		category: 'framework'
+	}),
+	defineSkill({
 		slug: 'fastapi',
 		color: 'cyan',
 		description: fastapi,
@@ -227,6 +237,14 @@ export const items = [
 		description: postgresql,
 		logo: Assets.PostgreSQL,
 		name: 'PostgreSQL',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'mongodb',
+		color: 'orange',
+		description: mongodb,
+		logo: Assets.MongoDB,
+		name: 'MongoDB',
 		category: 'db'
 	}),
 	defineSkill({

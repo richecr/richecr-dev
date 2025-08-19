@@ -8,7 +8,13 @@ export const name = 'Rich';
 export const lastName = 'Ramalho';
 
 export const description =
-	"Graduated in Computer Science from UFCG and studying MBA - Full Cycle Architecture. Experienced in web and mobile development with Python, JavaScript, Java, Kotlin and more. Currently, I work with technologies such as NodeJS, Kotlin, Python and React at OLX Brasil. I'm passionate about Open Source projects, new technologies and electronic games, especially FPS like CSGO and Souls Like like Gow Of War. I constantly seek to learn more and contribute to solutions that positively impact the world.";
+	`Software Engineer II at OLX Brasil, with a Bachelor’s in Computer Science (UFCG) and an MBA in Full
+Cycle Architecture. I specialize in building large-scale integration platforms, currently working in the
+Ad-Integration team responsible for the insertion, update, and deletion of millions of listings across OLX,
+ZAP, and Viva Real. My experience spans high-performance APIs, event-driven architectures, and end-to-end
+observability. I focus on scalability, resilience, and business impact, delivering solutions that improve client
+experience and conversion while enabling faster partner integrations. Proficient in modern stacks (Java,
+Kotlin, Python, JavaScript/TypeScript, Spring, Node.js, AWS, Kafka, Kubernetes).`;
 
 export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/richecr' },
@@ -37,9 +43,11 @@ export const skills = getSkills(
 	'js',
 	'ts',
 	'go',
+	'clojure',
 	'nodejs',
-	'fastapi',
+	'nestjs',
 	'spring',
+	'fastapi',
 	'fastify',
 	'expressjs',
 	'reactjs',
@@ -51,5 +59,6 @@ export const skills = getSkills(
 	'nginx',
 	'kafka',
 	'postgresql',
+	'mongodb',
 	'redis'
 );

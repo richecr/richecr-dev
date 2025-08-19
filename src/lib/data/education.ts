@@ -1,11 +1,11 @@
-import Assets from './assets';
 import type { Education } from '../types';
+import Assets from './assets';
 
 export const items: Array<Education> = [
 	{
 		degree: 'MBA of Full Cycle Architecture',
 		description:
-			'O MBA em Arquitetura Full Cycle é uma formação completa, reconhecida pelo MEC, que trabalhará as principais habilidades que um desenvolvedor precisa para ser capaz de liderar, arquitetar e entregar projetos de grande porte para grandes empresas e ter um dos perfis mais bem pagos e desejados do mercado.',
+			'The MBA in Full Cycle Architecture is a comprehensive program, accredited by the Ministry of Education (MEC), designed to develop the key skills a software engineer needs to lead, architect, and deliver large-scale projects for major companies, positioning graduates among the most sought-after and well-paid professionals in the market.',
 		location: 'Online',
 		logo: Assets.FullCycle,
 		name: '',

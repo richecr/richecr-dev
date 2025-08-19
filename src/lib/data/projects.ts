@@ -1,203 +1,195 @@
+import type { Project } from '../types';
 import Assets from './assets';
 import { getSkills } from './skills';
-import type { Project } from '../types';
 
 export const items: Array<Project> = [
-	{
-		slug: 'duck-orm',
-		color: '#0086ff',
-		description:
-			'The Duck-ORM package is an asynchronous ORM for Python, with support for Postgres and SQLite. ORM is built with: databases. Requirements: Python 3.8+. Duck-ORM is still under development.',
-		shortDescription:
-			'The Duck-ORM package is an asynchronous ORM for Python, with support for Postgres and SQLite.',
-		links: [
-			{ to: 'https://github.com/richecr/duck-orm', label: 'GitHub' },
-			{ to: 'https://richecr.github.io/duck-orm/', label: 'Documentation' }
-		],
-		logo: Assets.Unknown,
-		name: 'DuckORM',
-		period: {
-			from: new Date(2021, 2, 7)
-		},
-		skills: getSkills('python', 'docker'),
-		type: 'Library'
-	},
-	{
-		slug: 'quem-gasta-mais',
-		color: '#31A400',
-		description:
-			'Application with the purpose of showing what is happening in the Chamber of Deputies. Which deputies spend the most and what they are spending on.',
-		shortDescription:
-			'Application with the purpose of showing what is happening in the Chamber of Deputies. Which deputies spend the most and what they are spending on.',
-		links: [
-			{ to: 'https://github.com/richecr/CamaraDosDeputados', label: 'GitHub' },
-			{
-				to: 'https://www.figma.com/file/d0EXcqtCoKIkeDIz5pBeGd/Prototype?type=design&node-id=0-1&mode=design',
-				label: 'Figma'
-			},
-			{ to: 'https://quem-gasta-mais.netlify.app/', label: 'Website' }
-		],
-		logo: Assets.QuemGastaMais,
-		name: 'Quem Gasta Mais',
-		period: {
-			from: new Date(2018, 11, 15)
-		},
-		skills: getSkills('js', 'reactjs', 'css'),
-		type: 'Website',
-		screenshots: [
-			{
-				label: 'Tela Principal',
-				src: 'https://i.imgur.com/OtfEO0S.png'
-			},
-			{
-				label: 'Listagem de Deputados',
-				src: 'https://i.imgur.com/wX1hX6h.png'
-			},
-			{
-				label: 'Informação e Despesas do Deputado',
-				src: 'https://i.imgur.com/qaDttAD.png'
-			},
-			{
-				label: 'Informação e Despesas do Deputado',
-				src: 'https://i.imgur.com/7F1Da27.png'
-			},
-			{
-				label: 'Listagem de Partidos',
-				src: 'https://i.imgur.com/bytVvqu.png'
-			},
-			{
-				label: 'Informação do Partido',
-				src: 'https://i.imgur.com/F38lWLY.png'
-			}
-		]
-	},
-	{
-		slug: 'barbearia-saraiva-frontend',
-		color: '#eb9a1a',
-		description:
-			'The product is a resource management system aimed at companies in the beauty salon/barbershop sector. We offer features such as: service scheduling, notifications, schedule management, customer loyalty system and registration with history.',
-		shortDescription:
-			'The product is a resource management system aimed at companies in the beauty salon/barbershop sector.',
-		links: [
-			{ to: 'https://github.com/richecr/barbearia-saraiva-frontend', label: 'GitHub' },
-			{
-				to: 'https://docs.google.com/document/d/1LeOk0IrCXdVdeRXOA4zwJhSroXwJIoF4GGRzgmF4AlE/edit?usp=sharing',
-				label: 'Documento de Plano de Negócio'
-			}
-		],
-		logo: Assets.BarbeariaSaraiva,
-		name: 'Barbearia Saraiva (Frontend)',
-		period: {
-			from: new Date(2022, 3, 7),
-			to: new Date(2022, 4, 22)
-		},
-		skills: getSkills('js', 'reactjs', 'css'),
-		type: 'Website',
-		screenshots: [
-			{
-				label: 'Tela de Login',
-				src: 'https://i.imgur.com/2rv6ZY3.png'
-			},
-			{
-				label: 'Listagem de Eventos (ADMIN)',
-				src: 'https://i.imgur.com/l29Mh9Q.png'
-			},
-			{
-				label: 'Agendando Evento (ADMIN)',
-				src: 'https://i.imgur.com/frcWniR.png'
-			},
-			{
-				label: 'Criar Nova Agenda',
-				src: 'https://i.imgur.com/1Jex5Ks.png'
-			},
-			{
-				label: 'Tela Sobre',
-				src: 'https://i.imgur.com/ovj64HB.png'
-			}
-		]
-	},
-	{
-		slug: 'barbearia-saraiva-back',
-		color: '#ff3e00',
-		description:
-			'The product is a resource management system aimed at companies in the beauty salon/barbershop sector. We offer features such as: service scheduling, notifications, schedule management, customer loyalty system and registration with history.',
-		shortDescription:
-			'The product is a resource management system aimed at companies in the beauty salon/barbershop sector.',
-		links: [
-			{ to: 'https://github.com/richecr/barbearia-saraiva-back', label: 'GitHub' },
-			{
-				to: 'https://docs.google.com/document/d/1LeOk0IrCXdVdeRXOA4zwJhSroXwJIoF4GGRzgmF4AlE/edit?usp=sharing',
-				label: 'Documento de Plano de Negócio'
-			}
-		],
-		logo: Assets.BarbeariaSaraiva,
-		name: 'Barbearia Saraiva (Backend)',
-		period: {
-			from: new Date(2021, 11, 16),
-			to: new Date(2022, 4, 20)
-		},
-		skills: getSkills('ts', 'express', 'postgresql', 'docker'),
-		type: 'Backend'
-	},
-	{
-		slug: 'PyElit',
-		color: '#69a7df',
-		description:
-			'It started with a research at LSI-UFCG and the activities are with Geoparsing and Topic Modeling. With the activities carried out, it was decided that it would be appropriate to create this library to be made available to the community.',
-		shortDescription:
-			'It started with a research at LSI-UFCG and the activities are with Geoparsing and Topic Modeling. With the activities carried out, it was decided that it would be appropriate to create this library to be made available to the community.',
-		links: [{ to: 'https://github.com/richecr/PyElit', label: 'GitHub' }],
-		logo: Assets.PyElit,
-		name: 'PyElit',
-		period: {
-			from: new Date(2019, 9, 9),
-			to: new Date(2022, 8, 6)
-		},
-		skills: getSkills('python'),
-		type: 'Library'
-	},
-	{
-		slug: 'pythonicsqlgo',
-		color: '#5777ff',
-		description: 'Query Builder written in Golang for Python.',
-		shortDescription: 'Query Builder written in Golang for Python.',
-		links: [{ to: 'https://github.com/richecr/pythonicsqlgo', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'pythonicsqlgo',
-		period: {
-			from: new Date(2023, 11, 24)
-		},
-		skills: getSkills('go', 'python'),
-		type: 'Library'
-	},
-	{
-		slug: 'hltvgo',
-		color: '#2bf500',
-		description: 'This is an unofficial library of hltv.org',
-		shortDescription: 'This is an unofficial library of hltv.org',
-		links: [{ to: 'https://github.com/richecr/hltvgo', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'hltvgo',
-		period: {
-			from: new Date(2023, 8, 30)
-		},
-		skills: getSkills('go', 'python'),
-		type: 'Library'
-	},
-	{
-		slug: 'pyhltv',
-		color: '#744700',
-		description: 'Library to extract information from the HLTV website.',
-		shortDescription: 'Library to extract information from the HLTV website.',
-		links: [{ to: 'https://github.com/richecr/pyhltv', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'pyhltv',
-		period: {
-			from: new Date(2020, 6, 26)
-		},
-		skills: getSkills('python'),
-		type: 'Library'
-	}
+  {
+    slug: 'holo-fn',
+    color: '#6e56cf',
+    description:
+      'A minimal functional library for TypeScript featuring monads like Maybe, Either, and Result. Built for composability and Rambda compatibility. Fully typed and immutable by default.',
+    shortDescription:
+      'Minimal functional library for TypeScript (Maybe/Either/Result), fully typed and composable.',
+    links: [
+      { to: 'https://github.com/richecr/holo-fn', label: 'GitHub' },
+      { to: 'https://richecr.github.io/holo-fn/', label: 'Documentation' }
+    ],
+    logo: Assets.Unknown,
+    name: 'holo-fn',
+    period: {
+      from: new Date(2025, 3, 1) // Apr 2025 (0-based month)
+    },
+    skills: getSkills('ts'),
+    type: 'Library'
+  },
+  {
+    slug: 'duck-orm',
+    color: '#0086ff',
+    description:
+      'Asynchronous ORM for Python with support for PostgreSQL and SQLite, built on top of databases. Targets Python 3.8+ and focuses on simplicity and async-first APIs.',
+    shortDescription:
+      'Async ORM for Python with PostgreSQL and SQLite support.',
+    links: [
+      { to: 'https://github.com/richecr/duck-orm', label: 'GitHub' },
+      { to: 'https://richecr.github.io/duck-orm/', label: 'Documentation' }
+    ],
+    logo: Assets.Unknown,
+    name: 'DuckORM',
+    period: {
+      from: new Date(2021, 2, 7)
+    },
+    skills: getSkills('python', 'postgresql', 'sqlite', 'docker'),
+    type: 'Library'
+  },
+  {
+    slug: 'quem-gasta-mais',
+    color: '#31A400',
+    description:
+      'Web app that tracks and visualizes Brazilian Chamber of Deputies expenses, highlighting who spends the most and on what.',
+    shortDescription:
+      'Open-source web app visualizing Brazilian Chamber of Deputies expenses.',
+    links: [
+      { to: 'https://github.com/richecr/CamaraDosDeputados', label: 'GitHub' },
+      {
+        to: 'https://www.figma.com/file/d0EXcqtCoKIkeDIz5pBeGd/Prototype?type=design&node-id=0-1&mode=design',
+        label: 'Figma'
+      },
+      { to: 'https://quem-gasta-mais.netlify.app/', label: 'Website' }
+    ],
+    logo: Assets.QuemGastaMais,
+    name: 'Quem Gasta Mais',
+    period: {
+      from: new Date(2018, 11, 15)
+    },
+    skills: getSkills('js', 'reactjs', 'css'),
+    type: 'Website',
+    screenshots: [
+      { label: 'Tela Principal', src: 'https://i.imgur.com/OtfEO0S.png' },
+      { label: 'Listagem de Deputados', src: 'https://i.imgur.com/wX1hX6h.png' },
+      { label: 'Informação e Despesas do Deputado', src: 'https://i.imgur.com/qaDttAD.png' },
+      { label: 'Informação e Despesas do Deputado', src: 'https://i.imgur.com/7F1Da27.png' },
+      { label: 'Listagem de Partidos', src: 'https://i.imgur.com/bytVvqu.png' },
+      { label: 'Informação do Partido', src: 'https://i.imgur.com/F38lWLY.png' }
+    ]
+  },
+  {
+    slug: 'barbearia-saraiva-frontend',
+    color: '#eb9a1a',
+    description:
+      'Resource management system for salons/barbershops: appointment scheduling, notifications, calendar management, loyalty features and customer history.',
+    shortDescription:
+      'Frontend for a salon/barbershop resource management system.',
+    links: [
+      { to: 'https://github.com/richecr/barbearia-saraiva-frontend', label: 'GitHub' },
+      {
+        to: 'https://docs.google.com/document/d/1LeOk0IrCXdVdeRXOA4zwJhSroXwJIoF4GGRzgmF4AlE/edit?usp=sharing',
+        label: 'Documento de Plano de Negócio'
+      }
+    ],
+    logo: Assets.BarbeariaSaraiva,
+    name: 'Barbearia Saraiva (Frontend)',
+    period: {
+      from: new Date(2022, 3, 7),
+      to: new Date(2022, 4, 22)
+    },
+    skills: getSkills('js', 'reactjs', 'css'),
+    type: 'Website',
+    screenshots: [
+      { label: 'Login screen', src: 'https://i.imgur.com/2rv6ZY3.png' },
+      { label: 'Event Listing (ADMIN)', src: 'https://i.imgur.com/l29Mh9Q.png' },
+      { label: 'Scheduling Event (ADMIN)', src: 'https://i.imgur.com/frcWniR.png' },
+      { label: 'Create New Schedule', src: 'https://i.imgur.com/1Jex5Ks.png' },
+      { label: 'About Screen', src: 'https://i.imgur.com/ovj64HB.png' }
+    ]
+  },
+  {
+    slug: 'barbearia-saraiva-back',
+    color: '#ff3e00',
+    description:
+      'Backend for the salon/barbershop management platform: scheduling, notifications, calendars, loyalty features and customer history.',
+    shortDescription:
+      'Backend for a salon/barbershop management platform.',
+    links: [
+      { to: 'https://github.com/richecr/barbearia-saraiva-back', label: 'GitHub' },
+      {
+        to: 'https://docs.google.com/document/d/1LeOk0IrCXdVdeRXOA4zwJhSroXwJIoF4GGRzgmF4AlE/edit?usp=sharing',
+        label: 'Documento de Plano de Negócio'
+      }
+    ],
+    logo: Assets.BarbeariaSaraiva,
+    name: 'Barbearia Saraiva (Backend)',
+    period: {
+      from: new Date(2021, 11, 16),
+      to: new Date(2022, 4, 20)
+    },
+    skills: getSkills('ts', 'express', 'postgresql', 'docker'),
+    type: 'Backend'
+  },
+  {
+    slug: 'PyElit',
+    color: '#69a7df',
+    description:
+      'Open-source Python library born from LSI-UFCG research for Geoparsing and Topic Modeling applied to urban issues.',
+    shortDescription:
+      'Python library for Geoparsing and Topic Modeling.',
+    links: [{ to: 'https://github.com/richecr/PyElit', label: 'GitHub' }],
+    logo: Assets.PyElit,
+    name: 'PyElit',
+    period: {
+      from: new Date(2019, 9, 9),
+      to: new Date(2022, 8, 6)
+    },
+    skills: getSkills('python'),
+    type: 'Library'
+  },
+  {
+    slug: 'pythonicsqlgo',
+    color: '#5777ff',
+    description:
+      'Query Builder written in Go targeting Python workflows, bridging ergonomic query composition across ecosystems.',
+    shortDescription:
+      'Cross-ecosystem Query Builder (Go → Python).',
+    links: [{ to: 'https://github.com/richecr/pythonicsqlgo', label: 'GitHub' }],
+    logo: Assets.Unknown,
+    name: 'pythonicsqlgo',
+    period: {
+      from: new Date(2023, 11, 24)
+    },
+    skills: getSkills('go', 'python'),
+    type: 'Library'
+  },
+  {
+    slug: 'hltvgo',
+    color: '#2bf500',
+    description:
+      'Unofficial Go library for consuming data from hltv.org.',
+    shortDescription:
+      'Unofficial hltv.org client in Go.',
+    links: [{ to: 'https://github.com/richecr/hltvgo', label: 'GitHub' }],
+    logo: Assets.Unknown,
+    name: 'hltvgo',
+    period: {
+      from: new Date(2023, 8, 30)
+    },
+    skills: getSkills('go'),
+    type: 'Library'
+  },
+  {
+    slug: 'pyhltv',
+    color: '#744700',
+    description:
+      'Python library to extract and consume data from the HLTV website.',
+    shortDescription:
+      'HLTV data extraction library in Python.',
+    links: [{ to: 'https://github.com/richecr/pyhltv', label: 'GitHub' }],
+    logo: Assets.Unknown,
+    name: 'pyhltv',
+    period: {
+      from: new Date(2020, 6, 26)
+    },
+    skills: getSkills('python'),
+    type: 'Library'
+  }
 ];
 
 export const title = 'Projects';
