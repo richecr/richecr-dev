@@ -1,0 +1,7 @@
+import{P as e}from"./types-1ebf2f37.js";import{g as i}from"./skills-ffb9133e.js";const s="Home",a="Rich",r="Ramalho",o=`Software Engineer II at OLX Brasil, with a Bachelor’s in Computer Science (UFCG) and an MBA in Full
+Cycle Architecture. I specialize in building large-scale integration platforms, currently working in the
+Ad-Integration team responsible for the insertion, update, and deletion of millions of listings across OLX,
+ZAP, and Viva Real. My experience spans high-performance APIs, event-driven architectures, and end-to-end
+observability. I focus on scalability, resilience, and business impact, delivering solutions that improve client
+experience and conversion while enabling faster partner integrations. Proficient in modern stacks (Java,
+Kotlin, Python, JavaScript/TypeScript, Spring, Node.js, AWS, Kafka, Kubernetes).`,l=[{platform:e.GitHub,link:"https://github.com/richecr"},{platform:e.Linkedin,link:"https://www.linkedin.com/in/rich-ramalho"},{platform:e.Twitter,link:"https://twitter.com/richzinho_ecr"},{platform:e.StackOverflow,link:"https://stackoverflow.com/users/13995829/rich-elton"},{platform:e.Email,link:"richelton14@gmail.com"}],c=i("python","java","kotlin","js","ts","go","clojure","nodejs","nestjs","spring","fastapi","fastify","expressjs","reactjs","vuejs","svelte","aws","docker","kubernetes","nginx","kafka","postgresql","mongodb","redis");export{l as a,o as d,r as l,a as n,c as s,s as t};
