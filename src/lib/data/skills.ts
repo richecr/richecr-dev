@@ -11,6 +11,11 @@ import js from '../md/js.md?raw';
 import kafka from '../md/kafka.md?raw';
 import kotlin from '../md/kotlin.md?raw';
 import kubernetes from '../md/kubernetes.md?raw';
+import agentcoreRuntime from '../md/agentcore-runtime.md?raw';
+import bedrock from '../md/bedrock.md?raw';
+import langchain from '../md/langchain.md?raw';
+import litellm from '../md/litellm.md?raw';
+import mcp from '../md/mcp.md?raw';
 import mongodb from '../md/mongodb.md?raw';
 import nestjs from '../md/nestjs.md?raw';
 import nginx from '../md/nginx.md?raw';
@@ -25,6 +30,7 @@ import saphana from '../md/saphana.md?raw';
 import sklearn from '../md/sklearn.md?raw';
 import spacy from '../md/spacy.md?raw';
 import spring from '../md/spring.md?raw';
+import strandsAgents from '../md/strands-agents.md?raw';
 import svelte from '../md/svelte.md?raw';
 import ts from '../md/ts.md?raw';
 import vuejs from '../md/vuejs.md?raw';
@@ -230,6 +236,54 @@ export const items = [
 		logo: Assets.Kafka,
 		name: 'Kafka',
 		category: 'devtools'
+	}),
+	defineSkill({
+		slug: 'litellm',
+		color: 'blue',
+		description: litellm,
+		logo: Assets.Unknown,
+		name: 'LiteLLM',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'mcp',
+		color: 'blue',
+		description: mcp,
+		logo: Assets.Unknown,
+		name: 'Model Context Protocol',
+		category: 'devtools'
+	}),
+	defineSkill({
+		slug: 'strands-agents',
+		color: 'blue',
+		description: strandsAgents,
+		logo: Assets.Unknown,
+		name: 'Strands Agents',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'langchain',
+		color: 'blue',
+		description: langchain,
+		logo: Assets.Unknown,
+		name: 'LangChain',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'bedrock',
+		color: 'orange',
+		description: bedrock,
+		logo: Assets.Unknown,
+		name: 'AWS Bedrock',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'agentcore-runtime',
+		color: 'blue',
+		description: agentcoreRuntime,
+		logo: Assets.Unknown,
+		name: 'AgentCore Runtime',
+		category: 'library'
 	}),
 	defineSkill({
 		slug: 'postgresql',

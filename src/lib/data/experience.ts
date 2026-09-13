@@ -4,6 +4,52 @@ import { getSkills } from './skills';
 
 export const items: Array<Experience> = [
   {
+    slug: 'software-engineer-3',
+    company: 'OLX Brasil',
+    description: `
+### Software Engineer III — Negotiation (Sep 2026 – Present)
+
+Leading engineering initiatives within the **Negotiation team**, responsible for **OLX's core chat platform handling ~90k requests per minute**. Focused on system resilience, zero-downtime architecture, and graceful degradation during third-party dependency outages.
+
+**Key Contributions & Responsibilities**
+- **High-Throughput Chat Infrastructure**: Architecting resilient messaging systems to guarantee high availability and low latency under extreme load;
+- **Fault-Tolerant Integrations**: Implementing robust circuit breakers and fallback strategies to keep chat services operational during downstream API failures;
+- **AI & Agentic Workflows**: Driving technical initiatives in **Generative AI**, leveraging **LiteLLM, Model Context Protocol (MCP), AWS Bedrock, and AgentCore Runtime** to design multi-agent systems and LLM orchestration;
+- **System Architecture & Resilience**: Applying Full Cycle Architecture concepts to optimize event-driven services and system observability;
+- **Technical Leadership**: Mentoring engineers, driving cross-team technical alignment, and setting standards for system reliability.
+`,
+    contract: ContractType.FullTime,
+    type: 'Software Development',
+    location: 'Remote',
+    period: { from: new Date(2026, 8, 1) },
+    skills: getSkills(
+      'kotlin',
+      'python',
+      'ts',
+      'nodejs',
+      'fastapi',
+      'spring',
+      'postgresql',
+      'redis',
+      'docker',
+      'kubernetes',
+      'aws',
+      'kafka',
+      'litellm',
+      'mcp',
+      'strands-agents',
+      'langchain',
+      'bedrock',
+      'agentcore-runtime'
+    ),
+    name: 'Software Engineer III',
+    color: 'blue',
+    links: [],
+    logo: Assets.OLX,
+    shortDescription:
+      'Negotiation team: High-throughput chat platform handling 90k req/min, resilience strategies, and LLM/Agentic systems.'
+  },
+  {
     slug: 'software-engineer-2',
     company: 'OLX Brasil',
     description: `
@@ -31,7 +77,7 @@ Part of the **Ad-Integration team**, responsible for the **platform that handles
     contract: ContractType.FullTime,
     type: 'Software Development',
     location: 'Remote',
-    period: { from: new Date(2023, 9, 1) },
+    period: { from: new Date(2023, 9, 1), to: new Date(2026, 8, 1) },
     skills: getSkills(
       'java',
       'kotlin',

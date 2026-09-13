@@ -8,13 +8,19 @@ export const name = 'Rich';
 export const lastName = 'Ramalho';
 
 export const description =
-	`Software Engineer II at OLX Brasil, with a Bachelor’s in Computer Science (UFCG) and an MBA in Full
-Cycle Architecture. I specialize in building large-scale integration platforms, currently working in the
-Ad-Integration team responsible for the insertion, update, and deletion of millions of listings across OLX,
-ZAP, and Viva Real. My experience spans high-performance APIs, event-driven architectures, and end-to-end
-observability. I focus on scalability, resilience, and business impact, delivering solutions that improve client
-experience and conversion while enabling faster partner integrations. Proficient in modern stacks (Java,
-Kotlin, Python, JavaScript/TypeScript, Spring, Node.js, AWS, Kafka, Kubernetes).`;
+	`Software Engineer III at OLX Brasil, holding a B.Sc. in Computer Science (UFCG) and an MBA in Full Cycle
+Architecture.
+
+Currently embedded in the Negotiation team, responsible for OLX's high-throughput chat platform processing
+90k requests per minute. I specialize in building mission-critical distributed systems designed for ultra-high
+availability, extreme fault tolerance, and graceful degradation across complex multi-service dependencies.
+
+Alongside large-scale messaging infrastructure, my active focus is on Generative AI & Agentic Systems,
+architecting LLM-driven workflows and autonomous agents using LiteLLM, Model Context Protocol (MCP), AWS
+Bedrock, and AgentCore Runtime.
+
+Core Focus: Distributed Systems, High-Throughput APIs, Resilience & Fault Tolerance, LLM Architectures,
+Event-Driven Systems (Kafka, AWS, K8s).`;
 
 export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/richecr' },
