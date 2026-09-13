@@ -1,0 +1,1 @@
+import{i as o}from"./experience-dd1737f8.js";function r({params:e}){if(e.slug)return{experience:o.find(t=>t.slug===e.slug)}}const l=Object.freeze(Object.defineProperty({__proto__:null,load:r},Symbol.toStringTag,{value:"Module"}));export{l as _,r as l};

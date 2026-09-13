@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="AgentCore Runtime logo">
+  <rect width="128" height="128" rx="20" fill="#111827"/>
+  <circle cx="64" cy="64" r="28" fill="none" stroke="#60a5fa" stroke-width="10"/>
+  <circle cx="64" cy="64" r="10" fill="#a78bfa"/>
+  <path d="M64 12v20m0 84v20M12 64h20m84 0h20M27 27l14 14m46 46l14 14m-74 0l14-14m46-46l14-14" stroke="#93c5fd" stroke-width="6" stroke-linecap="round"/>
+</svg>
