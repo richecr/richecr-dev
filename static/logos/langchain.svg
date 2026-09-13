@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="LangChain logo">
+  <rect width="128" height="128" rx="20" fill="#0f172a"/>
+  <g fill="none" stroke="#34d399" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M28 40h30l12 24H40l-12 24h30"/>
+    <path d="M100 40H70l-12 24h30l12 24H70"/>
+  </g>
+  <circle cx="28" cy="40" r="8" fill="#34d399"/>
+  <circle cx="100" cy="40" r="8" fill="#34d399"/>
+  <circle cx="40" cy="88" r="8" fill="#34d399"/>
+  <circle cx="88" cy="88" r="8" fill="#34d399"/>
+</svg>

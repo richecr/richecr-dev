@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="LiteLLM logo">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="20" fill="#0f172a"/>
+  <path d="M38 90V38h18l18 18V90H58V60h-8v30H38zm42 0V38h18v18H80v34H62V38h18v18h18v34H80z" fill="url(#g1)"/>
+  <circle cx="96" cy="34" r="6" fill="#f8fafc"/>
+</svg>

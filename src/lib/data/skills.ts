@@ -241,7 +241,7 @@ export const items = [
 		slug: 'litellm',
 		color: 'blue',
 		description: litellm,
-		logo: Assets.Unknown,
+		logo: Assets.LiteLLM,
 		name: 'LiteLLM',
 		category: 'library'
 	}),
@@ -249,7 +249,7 @@ export const items = [
 		slug: 'mcp',
 		color: 'blue',
 		description: mcp,
-		logo: Assets.Unknown,
+		logo: Assets.MCP,
 		name: 'Model Context Protocol',
 		category: 'devtools'
 	}),
@@ -257,7 +257,7 @@ export const items = [
 		slug: 'strands-agents',
 		color: 'blue',
 		description: strandsAgents,
-		logo: Assets.Unknown,
+		logo: Assets.StrandsAgents,
 		name: 'Strands Agents',
 		category: 'library'
 	}),
@@ -265,7 +265,7 @@ export const items = [
 		slug: 'langchain',
 		color: 'blue',
 		description: langchain,
-		logo: Assets.Unknown,
+		logo: Assets.LangChain,
 		name: 'LangChain',
 		category: 'library'
 	}),
@@ -273,7 +273,7 @@ export const items = [
 		slug: 'bedrock',
 		color: 'orange',
 		description: bedrock,
-		logo: Assets.Unknown,
+		logo: Assets.Bedrock,
 		name: 'AWS Bedrock',
 		category: 'devops'
 	}),
@@ -281,7 +281,7 @@ export const items = [
 		slug: 'agentcore-runtime',
 		color: 'blue',
 		description: agentcoreRuntime,
-		logo: Assets.Unknown,
+		logo: Assets.AgentCoreRuntime,
 		name: 'AgentCore Runtime',
 		category: 'library'
 	}),
